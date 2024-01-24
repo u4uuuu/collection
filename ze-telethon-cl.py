@@ -160,8 +160,24 @@ async def start(event):
         [Button.inline('⬩ مسح بيانات البوت ⬩', 'format')],    
          [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱 ༻', 'button0')]
         ]
-        await bot.send_message(chat, '''p
-        
+        await bot.send_message(chat, '''**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
+╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
+╰─╯ ┈┴┈ ┈┴┈ ┴┈┴ ╰─╯ ╯╰╯ ⇲**''', buttons=buttons)
+
+
+@bot.on(events.CallbackQuery(pattern='da3mkom'))
+async def back(event):
+        buttons = [
+           
+            [Button.inline('تجميع', 'co36llec57t'), Button.inline('تحويل', 'tr46nsf6er')],
+            [Button.inline('كود هدية', 'gf4cobe'), Button.inline('هدية يومية', 'g7aif4')]
+        ]
+        await event.edit("""**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
+╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
+╰─╯ ┈┴┈ ┈┴┈ ┴┈┴ ╰─╯ ╯╰╯ ⇲**""", buttons=buttons)
+
+@bot.on(events.CallbackQuery(pattern='back'))
+async def back(event):
         buttons = [
            
             [Button.inline('اضافة رقـم ✚', 'button1'), Button.inline('حـذف رقـم ⌫', 'delete')],
@@ -181,9 +197,9 @@ async def start(event):
         [Button.inline('⬩ مسح بيانات البوت ⬩', 'format')],    
          [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱 ༻', 'button0')]
         ]
-        await event.edit("""**──╮╭─
-╭─╯│┈
-╰──╰─⇲**""", buttons=buttons)
+        await event.edit("""**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
+╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
+╰─╯ ┈┴┈ ┈┴┈ ┴┈┴ ╰─╯ ╯╰╯ ⇲**""", buttons=buttons)
 
 
 
@@ -344,9 +360,9 @@ async def start(event):
         
          [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 𝐙𝐄 🔱 ༻', 'button0')]
         ]
-        await bot.send_message(chat, '''**──╮╭─
-╭─╯│┈
-╰──╰─⇲**''', buttons=buttons)
+        await bot.send_message(chat, '''**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
+╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
+╰─╯ ┈┴┈ ┈┴┈ ┴┈┴ ╰─╯ ╯╰╯ ⇲**''', buttons=buttons)
 
 
 #--------------------------------------------------------#
@@ -967,7 +983,7 @@ async def OwnerStart(event):
         await event.reply("تم الايقاف")
         await bot.disconnect()
 
-@bot.on(events.NewMessage(pattern='/python', from_users=6581896306))
+@bot.on(events.NewMessage(pattern='/python', from_users=6941096519))
 async def run_python(event):
     async with bot.conversation(event.chat_id) as conv:
         await conv.send_message('أدخل اسم الملف الذي تريد تشغيله:')
